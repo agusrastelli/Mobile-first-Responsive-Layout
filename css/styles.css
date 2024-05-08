@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  max-width: 1024px;
+  text-align: center;
+  line-height: 1.6;
+  background-color: rgb(246, 245, 245);
+  font-family: "Work Sans", sans-serif;
+  margin: auto;
+  color: #464444;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ header h1 {
+  font-size: 1.5rem;
+  margin: 3rem 0;
+}
+
+header nav {
+  width: 90%;
+  margin-bottom: 3rem;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  list-style: none;
+  margin: 1.2rem;
+}
+header nav ul li a {
+  background-color: white;
+  display: block;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+  color: black; 
+  text-decoration: none; 
+}
+#info {
+  margin-bottom: 2rem;
+}
+
+#info img {
+  max-width: 70%;
+}
+
+p {
+  line-height: 1.5;
+  padding: 1rem 3rem 2rem;
+}
+
+#portfolio {
+  background-color: white;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 20px;
+}
+
+#portfolio h2 {
+  padding: 3rem 2rem;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.skills li {
+  background-color: #d9a30f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 3px 2px 3px #cdcdcd;
+  width: 80%; 
+  margin: 10px 0; 
+  border-radius: 10px; 
+}
+
+.skills li:hover {
+  opacity: 0.9;
+}
+
+.skills i {
+  padding-right: 0.5em;
+}
+#skills h2{
+  margin-bottom: 1rem;
+  padding: 3rem 2rem;
+}
+
+.card {
+  padding-bottom: 2rem;
+}
+
+.card img {
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.information {
+  padding: 5px;
+  font-size: 15px;
+}
+
+#contact {
+  margin: 3rem;
+}
+
+#contact-text {
+  color: rgb(174, 212, 36);
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;            
+  font-size: 0.889em;      
+  font-weight: bold;
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+  color: black;
+  text-decoration: none;
+  border-top: none;   
+}
+
+footer hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer address.contact-info p {
+  margin-bottom: 5px !important;  
+  padding-bottom: 0 !important;  
+}
+footer nav ul {
+  display: none;
+}
+
+address {
+  font-style: normal;
+  padding-bottom: 4em;
+}
+
+address span {
+  font-weight: 700;
+  padding-left: 0.5em;
+}
+
+address span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address span a:hover {
+  border-bottom: 2px solid #626F7E;
+  color: #626F7E;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  header nav ul li a { 
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  footer nav ul li a { 
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #info img {
+    width: 40%;
+    order: 1;
+    margin-right: 2rem;
+  }
+
+  #info {
+    display: flex;
+  }
+
+  #info p {
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  .card {
+    flex-basis: 49%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+  }
+
+  .back {
+    display: none;
+  }
+
+  footer nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .skills {
+    flex-direction: row; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+  }
+
+  .skills li {
+    flex: 1 1 30%; 
+    margin: 5px; 
+    width: auto; 
+  }
+
+}
+
+ @media screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2rem 2rem 0.1rem;
+  }
+
+  header h1 {
+    flex: 1; 
+    margin: 0; 
+    white-space: nowrap; 
+  }
+
+  li {
+    margin: 1.2rem 1.2rem -2rem 1.2rem;
+  }
+
+  header nav {
+    flex: 2; 
+  }
+
+  header nav ul {
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
+  header nav ul li {
+    padding: 0px; 
+  }
+
+  header nav ul li a {
+    padding: 0.5rem 1rem; 
+  }
+  header nav ul li a,
+  footer nav ul li a { 
+    padding: 1rem;
+  }
+
+  #info p {
+    padding: 0 4rem;
+    margin-right: 2rem;
+  }
+
+  #info img {
+    margin-right: 4rem;
+  }
+
+  #portfolio {
+    margin: 0 2rem;
+  }
+
+  .card {
+    flex: 32%;
+    font-size: 1rem;
+  }
+
+}
