@@ -1,4 +1,4 @@
-# Mobile first responsive layout
+# Mobile-first Responsive Layout
 
 This is my second project for Treehouse Front End Web Development Techdegree. I built a responsive, mobile-first layout using HTML and CSS. I wrote the CSS to style the page for a small mobile device first. Then, using min-width media queries, I added breakpoints to adjust the layout for wider tablet and desktop screens.
 
